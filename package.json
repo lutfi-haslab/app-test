@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lutfiblog/mytest-backend.git",
+  "author": "lutfiblog",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx nodemon index.js",
+    "prisma:migrate": "npx prisma migrate dev --name init",
+    "prisma:pull": "npx prisma db pull",
+    "prisma:gn": "npx prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.7.1",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "prisma": "^4.7.1"
+  }
+}
